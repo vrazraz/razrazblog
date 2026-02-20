@@ -1,0 +1,78 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Post {
+  id          String   @id @default(cuid())
+  type        String   @default("post") // "post" or "article"
+  slug        String   @unique
+  titleRu     String
+  titleEn     String?
+  contentRu   String
+  contentEn   String?
+  excerptRu   String?
+  excerptEn   String?
+  coverImage  String?
+  published   Boolean  @default(false)
+  publishedAt DateTime?
+  scheduledAt DateTime?
+  tags        String   @default("[]") // JSON array of tags
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Project {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  category     String   @default("design") // "ai" or "design"
+  titleRu      String
+  titleEn      String?
+  descriptionRu String
+  descriptionEn String?
+  contentRu    String?  // Full case study content
+  contentEn    String?
+  coverImage   String?
+  images       String   @default("[]") // JSON array of image URLs
+  order        Int      @default(0)
+  published    Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model CvSection {
+  id        String   @id @default(cuid())
+  type      String   // "experience", "education", "skills", "certificates", "talks"
+  titleRu   String
+  titleEn   String?
+  contentRu String   // JSON content
+  contentEn String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SiteSettings {
+  id        String   @id @default("main")
+  nameRu    String   @default("Виталий")
+  nameEn    String?  @default("Vitaly")
+  roleRu    String   @default("Продуктовый дизайнер")
+  roleEn    String?  @default("Product Designer")
+  bioRu     String   @default("")
+  bioEn     String?
+  telegram  String?
+  linkedin  String?
+  github    String?
+  cvPdfUrl  String?
+  updatedAt DateTime @updatedAt
+}
+
+model Admin {
+  id       String @id @default(cuid())
+  email    String @unique
+  password String // hashed
+}

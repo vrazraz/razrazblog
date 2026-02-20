@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "cv": "CV"
+  },
+  "home": {
+    "greeting": "Hi, I'm",
+    "role": "Product Designer",
+    "bio": "I build products at the intersection of design and technology. Passionate about AI, experimenting with new tools, and sharing what I learn.",
+    "latestPosts": "Latest Posts",
+    "allPosts": "All Posts"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "aiProjects": "AI Pet Projects",
+    "designProjects": "Design Projects"
+  },
+  "blog": {
+    "title": "Blog",
+    "posts": "Posts",
+    "articles": "Articles",
+    "all": "All",
+    "noPosts": "No posts yet",
+    "readMore": "Read more"
+  },
+  "cv": {
+    "title": "CV",
+    "download": "Download PDF",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "certificates": "Certificates",
+    "talks": "Talks"
+  },
+  "common": {
+    "theme": "Theme",
+    "language": "Language",
+    "backToHome": "Back to home"
+  }
+}

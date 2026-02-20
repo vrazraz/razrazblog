@@ -1,0 +1,21 @@
+# Vitaly — Product Designer
+
+> Personal website of Vitaly, a product designer based in Krasnodar, Russia.
+
+## About
+Product designer with experience in fintech, SaaS, and AI products. 
+Passionate about the intersection of design and artificial intelligence.
+
+## Sections
+- Portfolio: Design and AI pet-projects with detailed case studies
+- Blog: Posts (Telegram-style short notes) and Articles (long-form content)
+- CV: Experience, education, skills, and certificates
+
+## Contact
+- Telegram: @nafanyah
+- Website languages: Russian (primary), English
+
+## Technical
+- Built with Next.js, TypeScript, Tailwind CSS
+- Content managed via custom CMS
+- Bilingual: Russian and English
