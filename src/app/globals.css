@@ -31,7 +31,7 @@
   --color-accent-dark: #567d44;
 
   /* Fonts */
-  --font-heading: "Instrument Serif", serif;
+  --font-heading: "Lora", serif;
   --font-body: "Satoshi", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
